@@ -26,7 +26,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Build Fabric and NeoForge mods
-        run: ./gradlew --no-daemon clean build
+        run: bash ./gradlew --no-daemon clean build
 
       - name: Upload mod JARs
         uses: actions/upload-artifact@v4
