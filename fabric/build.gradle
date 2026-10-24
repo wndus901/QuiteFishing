@@ -1,5 +1,5 @@
 plugins {
-    id 'com.github.johnrengelman.shadow'
+    id 'com.gradleup.shadow'
 }
 
 def baseArchivesName = "${archives_name}-${minecraft_version}-fabric"
@@ -15,11 +15,6 @@ repositories {
     // for more information about repositories.
     maven {url "https://maven.terraformersmc.com/releases"}
     maven {url = "https://api.modrinth.com/maven"}
-}
-
-architectury {
-    platformSetupLoomIde()
-    fabric()
 }
 
 configurations {

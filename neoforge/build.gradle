@@ -1,15 +1,10 @@
 plugins {
-    id 'com.github.johnrengelman.shadow'
+    id 'com.gradleup.shadow'
 }
 
 def baseArchivesName = "${archives_name}-${minecraft_version}-neoforge"
 base {
     archivesName.set(baseArchivesName)
-}
-
-architectury {
-    platformSetupLoomIde()
-    neoForge()
 }
 
 configurations {
